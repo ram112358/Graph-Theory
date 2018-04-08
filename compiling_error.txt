@@ -1,0 +1,4 @@
+/home/ram/Projects/GraphTheory/ChessBoardOutput.cpp: In function ‘void printBoard()’:
+/home/ram/Projects/GraphTheory/ChessBoardOutput.cpp:43:39: error: invalid types ‘char[int]’ for array subscript
+                 cout << piece[i/2][j/2];
+                                       ^
