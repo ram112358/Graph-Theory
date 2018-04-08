@@ -10,18 +10,19 @@ int main(){
     cout << "n = ";
     cin >> n;
 
-    char pieces[n][n] = {};
+    char piecesArray[n][n] = {};
+    char **piecesPointer = piecesArray;
 
     for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++){
-            pieces[i][j] = ' '; 
+            piecesArray[i][j] = ' ';
         }
     }
 
 
 
     // while (true){
-        printBoard(pieces, n);
+        printBoard(piecesPointer, n);
         cout << "What is the piece? (q to quit):";
 
         cout << "Where would you like to place a piece? (X):";
