@@ -1,0 +1,8 @@
+todo:
+- add a place piece function that can account for a taurus (just out of bounds stuff) to make "ownership" markers easier to make
+- make the boards actually square
+- have a persistent board that gets updated instead of just reprinting it
+- options for square,cylinder,taurus
+- make a build that people can download and run without having a python compiler
+- detect what kind of piece and show "ownership markers"
+- have option for marking when pieces are attacking each other
