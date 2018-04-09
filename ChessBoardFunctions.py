@@ -77,6 +77,6 @@ def placeChess(board,n,m,piece,r,c):
 # uses limitPiece and then places the piece so long as it isn't filled
 def placePiece(board,n,m,piece,r,c):
     r , c = limitPiece(n,m,r,c)
-    if board[r][c] == " ":
+    if board[r][c] == " " or board[r][c] == "~":
         board[r][c] = piece
     return board;
