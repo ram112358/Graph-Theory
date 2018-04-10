@@ -6,10 +6,11 @@ m=int(m)
 
 board = [[' ' for _ in range(m)] for _ in range(n)]
 
+ChessBoardFunctions.printBothNoReturn(board,n,m)
+
 while True:
-    ChessBoardFunctions.printOneBoard(board,n,m)
-    ChessBoardFunctions.printNineBoards(board,n,m)
-    piece, c, r = raw_input("Enter the piece followed by the colum and row (piece c r):").split()
+    piece, r, c = raw_input("Enter the piece followed by the colum and row (piece r c):").split()
     r=int(r) - 1
     c=int(c) - 1
     board = ChessBoardFunctions.placeChess(board,n,m,piece,r,c)
+    ChessBoardFunctions.printBothWithReturn(board,n,m)
