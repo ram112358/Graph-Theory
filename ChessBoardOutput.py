@@ -1,6 +1,6 @@
 import ChessBoardFunctions
 
-n, m = raw_input("How big do you want the board (two numbers:n m): ").split()
+n, m = raw_input("How big do you want the board (n,m)>2:").split()
 n=int(n)
 m=int(m)
 

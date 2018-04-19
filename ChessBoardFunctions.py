@@ -38,13 +38,13 @@ def printOneBoard(board,n,m):
 def printNineBoards(board,n,m):
     sys.stdout.write(" ")
     for i in range (0,3*m):
-            sys.stdout.write("%2s" % ((i%3)+1))
+            sys.stdout.write("%2s" % (i%m+1))
 
     print("")
 
     for i in range (0,6*n+1):
         if i%2 == 1:
-            sys.stdout.write("%s" % (i/2+1))
+            sys.stdout.write("%s" % ((i/2)%n+1))
         else:
             sys.stdout.write(" ")
 
